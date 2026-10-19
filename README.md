@@ -65,7 +65,7 @@ Patients can discover doctors, view available time slots, request and manage app
 
 ## Database Design
 
-![Clinic Booking Platform ERD](/Projects/Clinic-Booking-Platform/ERD/Clinic%20Booking%20Platform%20ERD.jpg)
+![alt text](image.png)
 
 ### Relationships
 
