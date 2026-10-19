@@ -65,7 +65,7 @@ Patients can discover doctors, view available time slots, request and manage app
 
 ## Database Design
 
-![alt text](image.png)
+![alt text](ERD.png)
 
 ### Relationships
 
