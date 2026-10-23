@@ -79,3 +79,29 @@ Patients can discover doctors, view available time slots, request and manage app
 ## Routes
 
 API routes will be documented here as they are designed and implemented.
+
+| Resource | Method | Endpoint | Purpose |
+|---|---|---|---|
+| Authentication | POST | `/api/auth/sign-up` | Register a patient account |
+| Authentication | POST | `/api/auth/login` | Log in |
+| Authentication | POST | `/api/auth/logout` | Log out |
+| Authentication | GET | `/api/auth/me` | Get the currently authenticated user |
+| Users | GET | `/api/users` | List users |
+| Users | GET | `/api/users/:id` | Get a user by ID |
+| Users | PATCH | `/api/users/me` | Update the current user's allowed profile fields |
+| Users | PATCH | `/api/users/:id` | Update a user, including blocking or unblocking |
+| Doctors | GET | `/api/doctors` | List doctors, with name search and specialty filtering |
+| Doctors | GET | `/api/doctors/:id` | Get doctor details |
+| Doctors | POST | `/api/doctors` | Create a doctor profile |
+| Doctors | PATCH | `/api/doctors/:id` | Update allowed doctor-profile fields or activation status |
+| Specialties | GET | `/api/specialties` | List specialties |
+| Specialties | POST | `/api/specialties` | Create a specialty |
+| Specialties | PATCH | `/api/specialties/:id` | Update a specialty |
+| Availability Slots | GET | `/api/availability-slots` | List availability slots using appropriate filters |
+| Availability Slots | POST | `/api/availability-slots` | Create an availability slot |
+| Availability Slots | PATCH | `/api/availability-slots/:id` | Update an availability slot |
+| Availability Slots | DELETE | `/api/availability-slots/:id` | Delete an availability slot where allowed |
+| Appointments | GET | `/api/appointments` | List appointments the current user is authorized to view |
+| Appointments | GET | `/api/appointments/:id` | Get an appointment the current user is authorized to view |
+| Appointments | POST | `/api/appointments` | Request an appointment |
+| Appointments | PATCH | `/api/appointments/:id` | Reschedule, confirm, decline, or cancel an appointment where allowed |
