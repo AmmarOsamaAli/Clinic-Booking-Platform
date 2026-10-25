@@ -79,12 +79,12 @@ async function signIn(req, res) {
     if (typeof email !== "string" || typeof password !== "string")
       return res
         .status(400)
-        .json({ message: "Name, Email, and Password should be a valid Text" });
+        .json({ message: "Email or Password should be a valid Text" });
 
     if (email.trim() === "")
       return res
         .status(400)
-        .json({ message: "Text cannot contain only whitespace" });
+        .json({ message: "Email cannot contain only whitespace" });
 
     const user = await User.findOne({ email: email.toLowerCase().trim() });
 
